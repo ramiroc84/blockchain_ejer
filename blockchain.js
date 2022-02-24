@@ -92,7 +92,7 @@ Blockchain.prototype.proofOfWork = function (
 module.exports = Blockchain;
 
 /* --------------------------------- CLASES --------------------------------- */
-
+//prueba
 // class Blockchain {
 //   constructor() {
 //     this.chain = [];
