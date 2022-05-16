@@ -32,10 +32,10 @@ console.log(bitcoin);
 // bitcoin.createNewTransaction(400, 'JANE78199bbebf', 'JEN78199bbebf');
 // bitcoin.createNewTransaction(500, 'BILL78199bbebf', 'JEN78199bbebf');
 
-// bitcoin.createNewBlock(
-//   666754,
-//   'prev624f85aa3dcc145a665e245fba0',
-//   'hashf1ed604072fc6b778199bbebf4'
-// );
+bitcoin.createNewBlock(
+  666754,
+  'prev624f85aa3dcc145a665e245fba0',
+  'hashf1ed604072fc6b778199bbebf4'
+);
 
-// console.log(bitcoin);
+console.log(bitcoin);

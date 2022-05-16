@@ -1,5 +1,6 @@
 const CryptoJS = require('crypto-js');
 
+// 4.Blockchain Constructor Function (se puede hacer con clases... )
 // Crea instancias de Blockchain
 function Blockchain() {
   this.chain = [];
@@ -7,8 +8,10 @@ function Blockchain() {
   this.createNewBlock(100, '0', '0'); // GENESIS BLOCK: parametros arbitrarios
 }
 
+// 5.Create New Block Method
 // Crea un bloque nuevo
 // Las funciones y los atributos dentro de prototype son comunes a todas las instancias
+// Todos los objetos tienen acceso a estos valores y funciones
 Blockchain.prototype.createNewBlock = function (
   nonce,
   previousBlockHash,
@@ -29,11 +32,13 @@ Blockchain.prototype.createNewBlock = function (
   return newBlock;
 };
 
+// 6. Get Las Block Method
 // Devuelve el ultimo bloque
 Blockchain.prototype.getLastBlock = function () {
   return this.chain[this.chain.length - 1];
 };
 
+// 7. Create New Transaction Method
 // Crea una nueva transaccion
 Blockchain.prototype.createNewTransaction = function (
   amount,
